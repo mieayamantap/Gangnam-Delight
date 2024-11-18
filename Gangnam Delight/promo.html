@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gangnam Delight | Promo</title>
+  <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark main-color">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand me-auto" href="#">Gangnam Delight</a>
+        <ul class="navbar-nav">
+          <li class="nav-item me-5">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active" aria-current="page" href="#">Promo</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true"><i class="bi bi-basket2-fill"></i> Keranjang</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="profil.html">Profil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <div class="container-fluid banner-promo d-flex align-items-center">
+    <div class="container">
+      <h2 class="text-light text-center">Semua Promo Untuk Anda!</h2>
+    </div>
+  </div>
+
+  <!-- promo -->
+  <div class="container-fuild py-5">
+    <div class="container">
+      <!-- kategori promo -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <button id="semuaPromoBtn" onclick="showAll()" class="btn btn-outline-warning w-100 fs-5 active">Semua Promo</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <button id="diskonPromoBtn" onclick="showDiskon()" class="btn btn-outline-warning w-100 fs-5">Promo Diskon</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <button id="bonusPromoBtn" onclick="showBonus()" class="btn btn-outline-warning w-100 fs-5">Promo Bonus</button>
+        </div>
+      </div>
+
+      <!-- isi promo -->
+      <!-- semua promo -->
+      <div id="semuaPromo">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/promo 1.jpg" data-lightbox="promo-1" data-title="chicken teriyaki">
+                <img src="dipake/promo 1.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 50%</h5>
+                <p class="card-text">Minimal membeli 3 porsi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/bungeoppang.jpeg" data-lightbox="bungeoppang" data-title="Bungeoppang">
+                <img src="dipake/bungeoppang.jpeg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Bonus Bungeoppang</h5>
+                <p class="card-text">Setiap pembelian paket BBQ.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/promo-2.jpg" data-lightbox="promo-2" data-title="lemon soda">
+                <img src="dipake/promo-2.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Beli 1 Gratis 1</h5>
+                <p class="card-text">Berlaku pada pukul 13.00 - 16.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/mandu.jpg" data-lightbox="mandu" data-title="Mandu">
+                <img src="dipake/mandu.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 35%</h5>
+                <p class="card-text">Minimal membeli 1 porsi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/Kimchi.jpeg" data-lightbox="kimchi" data-title="Kimchi">
+                <img src="dipake/Kimchi.jpeg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 60%</h5>
+                <p class="card-text">Minimal membeli Rp.70.000,-.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/promo-3.jpg" data-lightbox="promo-3" data-title="promo-3">
+                <img src="dipake/promo-3.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Bonus Cupcake</h5>
+                <p class="card-text">Khusus 30 pengunjung pertama.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/Toppoki.jpeg" data-lightbox="tteokbokki" data-title="Tteokbokki">
+                <img src="dipake/Toppoki.jpeg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 20%</h5>
+                <p class="card-text">Tanpa minimal membeli.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/berry.jpg" data-lightbox="Milk Bery" data-title="Milk Berry">
+                <img src="dipake/berry.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Beli 2 Gratis 1</h5>
+                <p class="card-text">Khusus pembeli dine-in.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- promo diskon -->
+      <div id="promoDiskon">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/promo 1.jpg" data-lightbox="promo-1" data-title="chicken teriyaki">
+                <img src="dipake/promo 1.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 50%</h5>
+                <p class="card-text">Minimal membeli 3 porsi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/Kimchi.jpeg" data-lightbox="kimchi" data-title="Kimchi">
+                <img src="dipake/Kimchi.jpeg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 60%</h5>
+                <p class="card-text">Minimal membeli Rp.70.000,-.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/Toppoki.jpeg" data-lightbox="tteokbokki" data-title="Tteokbokki">
+                <img src="dipake/Toppoki.jpeg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 20%</h5>
+                <p class="card-text">Tanpa minimal membeli.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/mandu.jpg" data-lightbox="mandu" data-title="Mandu">
+                <img src="dipake/mandu.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Potongan Harga 35%</h5>
+                <p class="card-text">Minimal membeli 1 porsi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- promo bonus -->
+      <div id="promoBonus">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/promo-2.jpg" data-lightbox="promo-2" data-title="lemon soda">
+                <img src="dipake/promo-2.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Beli 1 Gratis 1</h5>
+                <p class="card-text">Berlaku pada pukul 13.00 - 16.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/bungeoppang.jpeg" data-lightbox="bungeoppang" data-title="Bungeoppang">
+                <img src="dipake/bungeoppang.jpeg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Bonus Bungeoppang</h5>
+                <p class="card-text">Setiap pembelian paket BBQ.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/berry.jpg" data-lightbox="Milk Bery" data-title="Milk Berry">
+                <img src="dipake/berry.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Beli 2 Gratis 1</h5>
+                <p class="card-text">Khusus pembeli dine-in.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+            <div class="card" style="width: 18rem;">
+              <a href="dipake/promo-3.jpg" data-lightbox="promo-3" data-title="promo-3">
+                <img src="dipake/promo-3.jpg" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 style="color: #AE445A" class="card-title">Bonus Cupcake</h5>
+                <p class="card-text">Khusus 30 pengunjung pertama.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- subscribe -->
+  <div class="container-fluid py-5 content-subscribe text-light">
+    <div class="container">
+      <h5 class="text-center mb-4">Temui Kami!</h5>
+      <div class="row justify-content-center">
+        <div class="col-md-1 d-flex justify-content-center">
+          <i class="bi bi-facebook fs-4"></i>
+        </div>
+        <div class="col-md-1 d-flex justify-content-center">
+          <i class="bi bi-instagram fs-4"></i>
+        </div>
+        <div class="col-md-1 d-flex justify-content-center">
+          <i class="bi bi-tiktok fs-4"></i>
+        </div>
+        <div class="col-md-1 d-flex justify-content-center">
+          <i class="bi bi-youtube fs-4"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid py-3 bg-dark text-light">
+    <div class="container d-flex justify-content-between">
+      <label>&copy;2024 Gangnam Delight</label>
+      <label>created by Kalsa Syaqila</label>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.js"></script>
+  <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+
+  <script>
+    var btnSemuaPromo = $("#semuaPromoBtn");
+    var btnDiskonPromo = $("#promoDiskonBtn");
+    var btnBonusPromo = $("#promoBonusBtn");
+
+    var semuaPromoView = $("#semuaPromo");
+    var diskonPromoView = $("#promoDiskon");
+    var bonusPromoView = $("#promoBonus"); 
+
+    diskonPromoView.hide();
+    bonusPromoView.hide(); 
+
+    function showAll() {
+        btnBonusPromo.removeClass('active');
+        btnDiskonPromo.removeClass('active');
+        btnSemuaPromo.addClass('active');
+
+        bonusPromoView.hide(1000);
+        diskonPromoView.hide(1000);
+        semuaPromoView.show(1000);
+    }
+
+    function showDiskon() {
+        btnSemuaPromo.removeClass('active');
+        btnBonusPromo.removeClass('active');
+        btnDiskonPromo.addClass('active');
+
+        semuaPromoView.hide(1000);
+        bonusPromoView.hide(1000);
+        diskonPromoView.show(1000);
+    }
+
+    function showBonus() {
+        btnSemuaPromo.removeClass('active');
+        btnDiskonPromo.removeClass('active');
+        btnBonusPromo.addClass('active');
+
+        semuaPromoView.hide(1000);
+        diskonPromoView.hide(1000);
+        bonusPromoView.show(1000);
+    }
+  </script>
+</body>
+</html>
